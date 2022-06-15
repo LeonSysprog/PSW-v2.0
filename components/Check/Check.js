@@ -14,6 +14,7 @@ async function getData() {
         document.location = 'check.html';
     }
     else if (sessionStorage['verifCode'] === code) {
+        // для localhost: https://localhost:7252/api/Booking
         const responsePOST = await fetch('http://www.slavacheck.somee.com/api/Booking', {
             method: "POST",
             headers: {
