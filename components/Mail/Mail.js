@@ -42,10 +42,12 @@ async function postData(countValue, nameValue, emailValue) {
     });
     // #
     // для localhost
+    /*
     if (response['status'] === 500) {
         alert('Несуществующий email, повторите попытку');
         document.location = 'mail.html';
     }
+    */
     // #
 
     if (response['status'] === 400) {
