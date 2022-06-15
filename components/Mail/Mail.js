@@ -22,6 +22,7 @@ async function postData(countValue, nameValue, emailValue) {
     if (countInt === 0) {
         countInt = 1;
     }
+    // для localhost: https://localhost:7252/api/Booking/SendEmail
     const response = await fetch('http://www.slavacheck.somee.com/api/Booking/SendEmail', {
         method: "POST",
         headers: {
@@ -34,10 +35,18 @@ async function postData(countValue, nameValue, emailValue) {
             email: emailValue
         })
     })
+    // для сайта
     .catch(err => {
         alert('Несуществующий email, повторите попытку');
         document.location = 'mail.html';
     });
+    // #
+    // для localhost
+    if (response['status'] === 500) {
+        alert('Несуществующий email, повторите попытку');
+        document.location = 'mail.html';
+    }
+    // #
 
     if (response['status'] === 400) {
         alert('В поле "Количество" введено число, превышающее количество товаров данного типа на складе магазина. Пожалуйста, введите другое число');
