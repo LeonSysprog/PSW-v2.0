@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PETSHOP</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="css/check.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+</head>
+  
+<body>
+    <header class="header">
+    <div class="overlay">
+      <h1 class="header-title">PET<br>
+SHOP</h1>
+      <h2 class ="tel">8 800 555 35 35<br><br>Вольская, 10А
+      </h2>
+      <nav>
+        <div class = "topnav" id="myTopnav">
+             <a href= "index.html">Каталог</a>
+  
+        </div>
+    </div>
+    <!--<nav>
+        <div class = "topnav" id="myTopnav">
+             <a href= "">Каталог</a>
+            <a href= "#">Корма и добавки</a>
+            <a href= "#">Животные</a>
+            <a href= "#">Аксесуары</a>
+            <a href= "#" id="menu" class = "icon">&#9776;</a>
+    
+    
+    
+        </div>
+    </nav>
+-->
+    
+
+  </header>
+      <div class="card-text">
+        <div class = "checkCode">
+      <form name ="checkCode" method="get" id="form">
+        <p>
+        <p> 
+        </p>
+            <legend>Введите код авторизации из электронного письма</legend>
+            <input type = "text" name="code" size = "40">
+        </p>
+        <input type="submit" value="проверить">
+        <p></p>
+      </form>
+    </div>
+       </div> 
+    <div id="header"></div>
+    <div id="products"></div>
+    <div id="shopping"></div>
+
+    <!-- Constants and Utils -->
+    <script src="constants/catalog.js"></script>
+    <script src="constants/root.js"></script>
+    <script src="utils/localStorageUtil.js"></script> 
+
+    <!-- Header -->
+    <script src="components/Header/Header.js"></script>
+    <link rel="stylesheet" href="components/Header/Header.css">
+
+    <!-- Check -->
+    <script src="components/Check/Check.js"></script>
+    <link rel="stylesheet" href="components/Check/Check.css">
+
+    <!-- Shopping -->
+    <script src="components/Shopping/Shopping.js"></script>
+    <link rel="stylesheet" href="components/Shopping/Shopping.css">
+    <footer class="footer"> 
+    <button class="help" onclick="help()">СПРАВКА</button>
+    </h4>
+    <h4 class="footer-author">НАШИ КОНТАКТЫ<br><br>petshopwebsite@gmail.com<br><br>8 800 555 35 35
+    </h4>
+    <h4 class="footer-author">РЕЖИМ РАБОТЫ<br><br>ПН-ПТ 8:00-22:00<br><br>СБ-ВС 8:00-20:00
+    </h4>
+    </footer>
+</body>
+</html>

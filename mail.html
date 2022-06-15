@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PETSHOP</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="css/mail.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+</head>
+  
+<body>
+    <header class="header">
+    <div class="overlay">
+      <h1 class="header-title">PET<br>
+SHOP</h1>
+      <h2 class ="tel">8 800 555 35 35<br><br>Вольская, 10А
+      </h2>
+      <nav>
+        <div class = "topnav" id="myTopnav">
+             <a href= "index.html">каталог</a>
+  
+        </div>
+    </div>
+      
+  </header>
+    <div class="card-text">
+    <div class = "sendMailForm">
+        <form name ="sendMail" method="post" id="form">
+            <p>
+              <legend>Количество</legend>
+              <input type = "text" onkeypress="if (isNaN( String.fromCharCode(event.keyCode))) return false;" name="count" size = "40" >
+            </p>
+
+            <p>
+              <legend>Ваше имя</legend>
+              <input type = "text" name="fio" size = "40">
+            </p>
+
+            <p>
+              <legend>Электронный адрес (убедитесь, что указываете существующую почту)</legend>
+              <input type = "text" name="email" size = "40">
+            </p>
+
+            <input type="submit" value="отправить">
+        </form>
+    </div>
+    </div>
+    <div id="header"></div>
+    <div id="products"></div>
+    <div id="shopping"></div>
+
+    <!-- Constants and Utils -->
+    <script src="constants/catalog.js"></script>
+    <script src="constants/root.js"></script>
+    <script src="utils/localStorageUtil.js"></script> 
+
+    <!-- Header -->
+    <script src="components/Header/Header.js"></script>
+    <link rel="stylesheet" href="components/Header/Header.css">
+
+    <!-- Mail -->
+    <script src="components/Mail/Mail.js"></script>
+    <link rel="stylesheet" href="components/Mail/Mail.css">
+
+    <!-- Shopping -->
+    <script src="components/Shopping/Shopping.js"></script>
+    <link rel="stylesheet" href="components/Shopping/Shopping.css">
+    <footer class="footer"> 
+    <button class="help" onclick="help()">СПРАВКА</button>
+    </h4>
+    <h4 class="footer-author">НАШИ КОНТАКТЫ<br><br>petshopwebsite@gmail.com<br><br>8 800 555 35 35
+    </h4>
+    <h4 class="footer-author">РЕЖИМ РАБОТЫ<br><br>ПН-ПТ 8:00-22:00<br><br>СБ-ВС 8:00-20:00
+    </h4>
+    </footer>
+</body>
+</html>
